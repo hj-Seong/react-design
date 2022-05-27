@@ -17,7 +17,14 @@ function App() {
   };
   return (
     <div className="App">
-      <Button variant="primary">Primary</Button>
+      <Button
+        variant="primary"
+        onClick={() => {
+          alert("눌렀습니다");
+        }}
+      >
+        Primary
+      </Button>
       <Container style={gridStyle}>
         <Row>
           <Col sm={8} md={4}>
@@ -38,8 +45,15 @@ function App() {
         <Row>
           <Col>
             <TestComp>값을 넣었습니다</TestComp>
-            <TestComp size="large">버튼을 눌러주세요</TestComp>
-            <button className="MyButton">버튼</button>
+            <TestComp
+              size="large pink"
+              // onClick의 값이 props 값으로 전달
+              onClick={() => {
+                alert("눌렀습니다");
+              }}
+            >
+              버튼을 눌러주세요
+            </TestComp>
           </Col>
         </Row>
       </Container>
