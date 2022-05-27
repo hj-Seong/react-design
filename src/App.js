@@ -10,6 +10,7 @@ import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 import "./App.css";
 import TestComp from "./components/TestComp";
+import Stylecomp from "./components/StyleComp";
 
 function App() {
   const gridStyle = {
@@ -54,6 +55,8 @@ function App() {
             >
               버튼을 눌러주세요
             </TestComp>
+            <Stylecomp primary />
+            <Stylecomp />
           </Col>
         </Row>
       </Container>
